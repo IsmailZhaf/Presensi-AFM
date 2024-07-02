@@ -1,12 +1,13 @@
+require('dotenv').config();
 import bcrypt from 'bcrypt';
 import { ADMIN } from '@/utils/schema';
 import { NextResponse } from 'next/server';
 import { db } from '@/utils';
 import { eq } from 'drizzle-orm';
-import { secretKey } from '@/config/secret';
 
 export async function POST(req) {
   const { nama, email, password, key } = await req.json();
+  const secretKey = process.env.SECRET_KEY;
 
   console.log('nama', nama);
   console.log('email', email);

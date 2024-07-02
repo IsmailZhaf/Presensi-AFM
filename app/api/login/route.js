@@ -1,13 +1,14 @@
+require('dotenv').config();
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import { NextResponse } from 'next/server';
 import { db } from '@/utils';
 import { ADMIN } from '@/utils/schema';
 import { eq } from 'drizzle-orm';
-import { secretKey } from '@/config/secret';
 
 export async function POST(req) {
   const { email, password } = await req.json();
+  const secretKey = process.env.SECRET_KEY;
 
   try {
     // Find ADMIN by email
