@@ -26,7 +26,7 @@ export default function GradeSelect({ selectedGrade }) {
     };
     return (
         <div>
-            <select className="p-2 w-[115px] border rounded-lg outline-none" onChange={(e) => selectedGrade(e.target.value)}>
+            <select className="p-2 w-[115px] border rounded-lg outline-none bg-white" onChange={(e) => selectedGrade(e.target.value)}>
                 {grades.map((item, index) => (
                     <option key={index} value={item.kelas}>
                         {item.kelas}

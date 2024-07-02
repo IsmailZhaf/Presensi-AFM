@@ -51,6 +51,7 @@ export const Register = () => {
           placeholder="Nama"
           value={nama}
           onChange={(e) => setNama(e.target.value)}
+          className="focus:outline-none"
         />
         <Input
           name="email"
@@ -58,6 +59,7 @@ export const Register = () => {
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          className="focus:outline-none"
         />
         <Input
           name="password"
@@ -65,6 +67,7 @@ export const Register = () => {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          className="focus:outline-none"
         />
         <Input
           name="key"
@@ -72,6 +75,7 @@ export const Register = () => {
           placeholder="Key"
           value={key}
           onChange={(e) => setKey(e.target.value)}
+          className="focus:outline-none"
         />
         <Button type="submit">Buat Akun</Button>
         <Link href={'/login'} className="text-sm text-white">

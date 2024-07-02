@@ -47,6 +47,7 @@ export const Login = () => {
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          className="focus:outline-none"
         />
         <Input
           name="password"
@@ -54,6 +55,7 @@ export const Login = () => {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          className="focus:outline-none"
         />
         <Button type="submit">Login</Button>
         <Link href={'/register'} className="text-sm text-white">

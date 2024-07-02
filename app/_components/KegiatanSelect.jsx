@@ -26,7 +26,7 @@ export default function KegiatanSelect({ selectedKegiatan }) {
 
     return (
         <div>
-            <select className="p-2 w-[135px] border rounded-lg outline-none" onChange={(e) => selectedKegiatan(e.target.value)}>
+            <select className="p-2 w-[135px] border rounded-lg outline-none bg-white" onChange={(e) => selectedKegiatan(e.target.value)}>
                 {kegiatan.map((item, index) => (
                     <option key={index} value={item.kegiatan}>
                         {formatString(item.kegiatan)}
