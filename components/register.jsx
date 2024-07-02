@@ -39,10 +39,12 @@ export const Register = () => {
     <main className="flex justify-center items-center h-screen bg-[url('/mf.png')] bg-cover bg-center">
       <form
         onSubmit={handleRegister}
-        className=" p-5 space-y-2  flex flex-col items-center bg-gray-500/40 rounded-lg shadow-xl"
+        className=" p-5 space-y-2  flex flex-col items-center bg-gray-500/60 rounded-lg shadow-xl"
       >
-        <section className="text-white">
-          <h1 className="text-xl font-medium tracking-tight">Daftar</h1>
+        <section className="text-gray-800">
+          <p className="text-center">
+            ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ
+          </p>
           <p>Selamat Datang! Silahkan Daftar</p>
         </section>
         <Input
