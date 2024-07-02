@@ -1,10 +1,11 @@
 // middleware.js
+require('dotenv').config();
 import { NextResponse } from 'next/server';
 import { jwtVerify } from 'jose';
-import { secretKey } from './config/secret';
 
 export async function middleware(req) {
   const token = req.cookies.get('token');
+  const secretKey = process.env.SECRET_KEY;
 
   if (!token) {
     return NextResponse.redirect(new URL('/login', req.url));
