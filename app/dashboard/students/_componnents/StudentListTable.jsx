@@ -183,7 +183,7 @@ export const StudentListTable = ({ studentList, refreshData }) => {
             >
                 <div className="p-2 rounded-lg border shadow-sm flex gap-2 mb-4 max-w-sm">
                     <Search />
-                    <input type="text" placeholder="Search for anything..." className="w-full outline-none" onChange={(event) => setSearchInput(event.target.value)} />
+                    <input type="text" placeholder="Search for anything..." className="w-full outline-none bg-white" onChange={(event) => setSearchInput(event.target.value)} />
                 </div>
                 <AgGridReact rowData={rowData} columnDefs={colDefs} quickFilterText={searchInput} pagination={pagination} paginationPageSize={paginationPageSize} paginationPageSizeSelector={paginationPageSizeSelector} />
             </div>
