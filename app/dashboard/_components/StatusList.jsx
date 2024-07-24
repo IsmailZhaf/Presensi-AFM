@@ -13,8 +13,7 @@ export const StatusList = ({ attendanceList, selectedMonth }) => {
         if (attendanceList && attendanceList.length > 0) {
             const totalSt = getUniqueRecord(attendanceList);
             setTotalStudent(totalSt.length);
-            const monthSelected = moment(selectedMonth).month() + 1;
-            const currentMonth = moment().month() + 1;
+        
 
             const year = moment(selectedMonth).format("YYYY"); // Formatnya "YYYY" untuk mendapatkan tahun 4 digit
             const month = moment(selectedMonth).format("MM"); // Formatnya "MM" untuk mendapatkan bulan 2 digit
@@ -39,11 +38,6 @@ export const StatusList = ({ attendanceList, selectedMonth }) => {
             }
 
             let totalDays = getWeekdaysInMonth(year, month).length;
-            // if (monthSelected !== currentMonth) {
-            //     totalDays = getWeekdaysInMonth(year, month).length;
-            // } else {
-            //     totalDays = moment().date(); // Jumlah hari hingga hari ini dalam bulan
-            // }
             const presentCount = attendanceList.filter((record) => record.present).length;
             const maxPossibleAttendances = totalSt.length * totalDays;
             console.log(maxPossibleAttendances);

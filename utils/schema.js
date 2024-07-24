@@ -27,7 +27,6 @@ export const SANTRI = pgTable("santri", {
     nama: varchar("nama", { length: 50 }).notNull(),
     kelas: varchar("kelas", { length: 10 }).notNull(),
     angkatan: varchar("angkatan", { length: 20 }).notNull(),
-    poin: integer("poin", { length: 5 }).default(300),
     NIS: varchar("NIS", { length: 20 }).primaryKey().notNull(),
     lastUpdatedMonth: varchar("lastUpdatedMonth", { length: 7 }), // Adding column for last updated month
 });

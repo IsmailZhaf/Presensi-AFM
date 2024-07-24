@@ -57,7 +57,7 @@ export default function AddNewStudent({refreshData}) {
                 <DialogTrigger asChild>
                     <Button>+ Tambah Santri Baru</Button>
                 </DialogTrigger>
-                <DialogContent>
+                <DialogContent className="max-w-[350px]">
                     <DialogHeader>
                         <DialogTitle>Tambah Santri Baru</DialogTitle>
                         <DialogDescription>

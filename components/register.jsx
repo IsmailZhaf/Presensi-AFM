@@ -15,7 +15,7 @@ export const Register = () => {
   const router = useRouter();
 
   async function handleRegister(event) {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault();
 
     const data = JSON.stringify({
       nama,
@@ -39,7 +39,7 @@ export const Register = () => {
     <main className="flex justify-center items-center h-screen bg-[url('/mf.png')] bg-cover bg-center">
       <form
         onSubmit={handleRegister}
-        className=" p-5 space-y-2  flex flex-col items-center bg-gray-500/60 rounded-lg shadow-xl"
+        className="p-8 space-y-2  md:w-[400px] md:h-[350px] flex flex-col items-center justify-center bg-[#C4D0E7]/60 rounded-lg shadow-xl"
       >
         <section className="text-gray-800">
           <p className="text-center">
@@ -80,7 +80,7 @@ export const Register = () => {
           className="focus:outline-none"
         />
         <Button type="submit">Buat Akun</Button>
-        <Link href={'/login'} className="text-sm text-white">
+        <Link href={'/login'} className="text-sm text-[#233126]">
           Login
         </Link>
       </form>

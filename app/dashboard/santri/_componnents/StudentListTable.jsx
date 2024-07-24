@@ -5,12 +5,9 @@ import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the 
 import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied to the grid
 import { Search, Trash, Edit } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import GlobalApi from "@/app/_services/GlobalApi";
 import { toast } from "sonner";
-import { LoaderIcon } from "lucide-react";
 
 export const StudentListTable = ({ studentList, refreshData }) => {
     const [open, setOpen] = useState();
@@ -178,7 +175,7 @@ export const StudentListTable = ({ studentList, refreshData }) => {
     return (
         <div className="my-7">
             <div
-                className="ag-theme-quartz" // applying the grid theme
+                className="ag-theme-quartz w-[320px] md:w-full" // applying the grid theme
                 style={{ height: 500 }} // the grid will fill the size of the parent container
             >
                 <div className="p-2 rounded-lg border shadow-sm flex gap-2 mb-4 max-w-sm">

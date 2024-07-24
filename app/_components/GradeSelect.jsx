@@ -6,9 +6,6 @@ import { useForm } from "react-hook-form";
 export default function GradeSelect({ selectedGrade }) {
     const [grades, setGrades] = useState([]);
     const {
-        register,
-        handleSubmit,
-        reset,
         formState: { errors },
     } = useForm();
 

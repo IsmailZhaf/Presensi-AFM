@@ -24,6 +24,7 @@
         "clsx": "^2.1.1",
         "dotenv": "^16.4.5",
         "drizzle-orm": "^0.30.10",
+        "framer-motion": "^11.3.6",
         "jose": "^5.6.2",
         "js-cookie": "^3.0.5",
         "jsonwebtoken": "^9.0.2",

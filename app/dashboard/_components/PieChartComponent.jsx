@@ -40,7 +40,7 @@ export const PieChartComponent = ({ attendanceList, selectedMonth }) => {
         <div className="border p-5 rounded-lg">
             <h2 className="font-bold text-xl">Kehadiran Bulanan</h2>
             <ResponsiveContainer width={"100%"} height={300}>
-                <PieChart width={730} height={250}>
+                <PieChart width={730} height={250} className="fixed sm:-z-10">
                     <Pie data={data} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
                 </PieChart>
             </ResponsiveContainer>

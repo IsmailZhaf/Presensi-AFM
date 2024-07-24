@@ -1,7 +1,6 @@
 import { db } from "@/utils";
 import { SANTRI } from "@/utils/schema";
 import { eq } from "drizzle-orm";
-import next from "next";
 import { NextResponse } from "next/server";
 
 export async function POST(req, res) {

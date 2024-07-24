@@ -27,7 +27,7 @@ export default function Attendance() {
         <div className="p-10">
             <h2 className="text-3xl font-bold">Kehadiran</h2>
             {/* Search option */}
-            <div className="flex gap-5 my-5 p-5 border rounded-lg shadow-sm">
+            <div className="md:flex space-y-3 gap-5 my-5 p-5 border rounded-lg shadow-sm">
                 <div className="flex gap-2 items-center">
                     <label>Pilih Kegiatan:</label>
                     <KegiatanSelect selectedKegiatan={(value) => setSelectedKegiatan(value)} />
