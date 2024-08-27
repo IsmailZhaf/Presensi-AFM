@@ -44,19 +44,19 @@ export default function AddNewStudent({ refreshData }) {
     console.log(data);
     setLoading(true);
     try {
-        const resp = await GlobalApi.CreateNewStudent(data);
-        console.log("---", resp);
-        if (resp.data) {
-            reset();
-            refreshData();
-            setLoading(false);
-            setOpen(false); // Close the dialog on successful submission
-            toast("New Student Added!");
-        }
+      const resp = await GlobalApi.CreateNewStudent(data);
+      console.log('---', resp);
+      if (resp.data) {
+        reset();
+        refreshData();
         setLoading(false);
+        setOpen(false); // Close the dialog on successful submission
+        toast('Santri Baru Berhasil ditambahkan!');
+      }
+      setLoading(false);
     } catch (error) {
-        console.error("Failed to create student", error);
-        setLoading(false);
+      console.error('Gagal menambahkan Santri', error);
+      setLoading(false);
     }
   };
 
