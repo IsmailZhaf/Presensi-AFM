@@ -158,7 +158,6 @@ export const StudentListTable = ({ studentList, refreshData }) => {
         { field: "nama", filter: true },
         { field: "kelas", filter: true },
         { field: "angkatan", filter: true },
-        { field: "poin", filter: true },
         { field: "action", cellRenderer: customButtons },
     ]);
 
